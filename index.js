@@ -16,6 +16,14 @@ dotenv.config();
 app.use(express.json());
 app.use(cors());
 
+app.get("/", (req, res) => {
+  try {
+    res.json({ message: "Welcome to Footlearn API" });
+  } catch (error) {
+    res.json({ message: "Unable to fetch API" });
+  }
+});
+
 app.use("/videos", videoRouter);
 app.use("/likedVideo", likedVideoRouter);
 app.use("/user", userRouter);
