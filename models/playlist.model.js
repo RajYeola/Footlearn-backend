@@ -6,7 +6,7 @@ const playlistSchema = Schema({
   playlists: [
     {
       _id: String,
-      playlistName: { type: String, unique: true },
+      playlistName: { type: String },
       videos: [{ type: Schema.Types.ObjectId, ref: "Video" }],
     },
   ],
