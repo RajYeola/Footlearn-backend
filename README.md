@@ -1,5 +1,5 @@
 # Footlearn backend
- Backend for the e-commerce application [footlearn](https://footlearn.netlify.app/)
+Backend for the video library application [footlearn](https://footlearn.netlify.app/)
 
 ## Tech Stack
 - ExpressJS
